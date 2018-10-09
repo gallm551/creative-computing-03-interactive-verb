@@ -31,5 +31,10 @@ body {
 .verb h1 {
   font-size: 200px;
   text-align: center;
+  font-size: 50px;
 }
 
+.verb h1 span:hover {
+  color: red;
+  font-size: 500px;
+}
