@@ -34,10 +34,16 @@ body {
 .verb h1 {
   font-size: 200px;
   text-align: center;
-  font-size: 50px;
+  font-size: 100px;
 }
 
 .verb h1 span:hover {
   color: red;
   font-size: 350px;
 }
+
+.header h2 {
+  font-color: darkkhaki;
+}
+
+.
