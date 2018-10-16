@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  overflow: scroll;
 }
 
 html {
@@ -8,7 +9,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 20px;
   padding: 0;
   min-width: 100vw;
   min-height: 100vh;
@@ -26,6 +27,8 @@ body {
 .content {
   height: 100%;
   width: 100%;
+  font-family: 'Crimson Text', serif;
+
 }
 
 .verb h1 {
@@ -36,5 +39,5 @@ body {
 
 .verb h1 span:hover {
   color: red;
-  font-size: 500px;
+  font-size: 350px;
 }
