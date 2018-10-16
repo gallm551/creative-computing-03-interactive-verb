@@ -9,10 +9,12 @@ html {
 }
 
 body {
-  margin: 20px;
+  margin: 25px;
   padding: 0;
   min-width: 100vw;
   min-height: 100vh;
+  background-color: #D2F0D1;
+  color: #164121;
 }
 
 .center {
@@ -32,18 +34,19 @@ body {
 }
 
 .verb h1 {
-  font-size: 200px;
+  font-size: 150px;
   text-align: center;
-  font-size: 100px;
 }
 
 .verb h1 span:hover {
-  color: red;
+  color: white;
   font-size: 350px;
 }
 
-.header h2 {
-  font-color: darkkhaki;
+.menu {
+  padding-left: 35px;
 }
 
-.
+h4 {
+  padding-left: 30px;
+}
