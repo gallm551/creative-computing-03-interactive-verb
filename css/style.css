@@ -15,6 +15,7 @@ body {
   min-height: 100vh;
   background-color: #D2F0D1;
   color: #164121;
+  font-family: 'Poiret One', cursive;
 }
 
 .center {
@@ -29,8 +30,6 @@ body {
 .content {
   height: 100%;
   width: 100%;
-  font-family: 'Crimson Text', serif;
-
 }
 
 .verb h1 {

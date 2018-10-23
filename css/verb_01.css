@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  overflow: none;
 }
 
 html {
@@ -9,9 +10,11 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 30px;
   min-width: 100vw;
   min-height: 100vh;
+  font-family: 'Poiret One', cursive;
+  background-color: peachpuff;
 }
 
 .center {
@@ -26,14 +29,24 @@ body {
 .content {
   height: 100%;
   width: 100%;
-  padding: 20px;
-  font-family: 'Crimson Text', serif;
 }
 
 .shape {
-  background: red;
   width: 200px;
-  height: 200px;
+  height: 120px;
+  border-radius: 10px;
+  position: relative;
+  left: 150px;
+  top: 100px;
+  background-color: lightseagreen;
+  color: cadetblue;
+  font-weight: bolder;
+  text-align: center; 
+  font-size: 100px;
+  animation-name: shapebind;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
 }
 
 .transforms {
@@ -46,4 +59,27 @@ body {
   transform: scaleY(1.5);
   transform: translateX(50px);
   transform: translateY(50px);
+}
+
+@keyframes shapebind {
+  0% {
+    background-color: lightblue;
+    transform: scaleX(2.5) scaleY(2.5);
+  }
+  25% {
+    background-color: powderblue;
+    transform: scaleX(1.5) scaleY(2.0);
+  }
+  50% {
+    background-color: powderblue;
+    transform: scaleX(1.0) scaleY(1.25);
+  }
+  75% {
+    background-color: powderblue;
+    transform: scaleX(0.5) scaleY(1.0);
+  }
+  100% {
+    background-color: powderblue;
+    transform: scaleX(0.25) scaleY(0.25);
+  }
 }
