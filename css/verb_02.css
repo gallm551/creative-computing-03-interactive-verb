@@ -13,6 +13,7 @@ body {
   padding: 0;
   min-width: 100vw;
   min-height: 100vh;
+  background-color: mistyrose;
   font-family: 'Khand', sans-serif;
 }
 
@@ -31,6 +32,7 @@ body {
 }
  .verb_02 {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 10%;
+  color: darkseagreen;
   font-size: 50px;
   }

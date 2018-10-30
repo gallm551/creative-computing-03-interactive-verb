@@ -30,4 +30,3 @@ function randomFloat (min, max) {
 
   return parseFloat(value.toFixed(2));
 }
-
