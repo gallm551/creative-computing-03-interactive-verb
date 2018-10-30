@@ -52,7 +52,7 @@ roundtangle2.style.height= height + "px";
 var background = randomNumber(100, 600);
 var borderColor = randomNumber(200, 500);
 
-roundtangle2.style.background = "hslColor(h, 30, 50)";
+roundtangle2.style.background = "hslColor(h, 30%, 50)";
 roundtangle2.style.borderColor = "hslColor(h, 70, 20)";
 
 var container = document.queryselector(".content");
