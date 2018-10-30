@@ -30,3 +30,29 @@ function randomFloat (min, max) {
 
   return parseFloat(value.toFixed(2));
 }
+
+function hslColor(h, s, l) {  
+  var hue = h;
+  var saturation = s + "%";
+  var luminance = l + "%";
+
+  var color = "hsl(" + hue + "," + saturation + "," + luminance + ")";
+
+  return color;
+}
+
+var shape_02 = document.queryselector(".shape")
+
+var width = randomNumber(200, 100);
+var height = randomNumber(150, 700);
+
+shape_02.style.width = width + "px";
+shape_02.style.height= height + "px";
+
+shape_02.style.background = hslColor(h, 50, 50);
+shape_02.style.borderColor = hslColor(h, 50, 50);
+
+var container = document.queryselector(".content");
+
+container.style.background = hslColor(h,50,10);
+

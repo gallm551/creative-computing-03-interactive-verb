@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  overflow: scroll;
+  overflow: none;
 }
 
 html {
@@ -10,11 +10,11 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 30px;
   min-width: 100vw;
   min-height: 100vh;
-  background-color: mistyrose;
   font-family: 'Khand', sans-serif;
+  background-color: mistyrose;
 }
 
 .center {
@@ -30,9 +30,61 @@ body {
   height: 100%;
   width: 100%;
 }
- .verb_02 {
-  text-align: center;
-  margin-top: 10%;
-  color: darkseagreen;
-  font-size: 50px;
+
+.shape {
+  width: 200px;
+  height: 110px;
+  border-radius: 10px;
+  position: relative;
+  left: 150px;
+  top: 90px;
+  background-color: darkseagreen;
+  color: mistyrose;
+  font-weight: bolder;
+  text-align: center; 
+  font-size: 100px;
+  animation-name: shapebind;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+.transforms {
+  transform: rotateZ(45deg);
+  transform: rotateX(45deg);
+  transform: rotateY(45deg);
+  transform: skewX(45deg);
+  transform: skewY(45deg);
+  transform: scaleX(1.5);
+  transform: scaleY(1.5);
+  transform: translateX(50px);
+  transform: translateY(50px);
+}
+
+@keyframes shapebind {
+  0% {
+    background-color: darkseagreen;
+    transform: scaleX(2.5) scaleY(2.5);
   }
+  25% {
+    background-color: #DAF7A6;
+    color: pink;
+    transform: scaleX(1.5) scaleY(2.0);
+  }
+  50% {
+    background-color: #DAF7A6;
+    color: hotpink;
+    transform: scaleX(1.0) scaleY(1.25);
+  }
+  75% {
+    background-color: honeydew;
+    color: deeppink;
+    transform: scaleX(0.5) scaleY(1.0);
+  }
+  100% {
+    background-color: white;
+    color: palevioletred;
+    transform: scaleX(0.25) scaleY(0.25);
+  }
+}
+ 
