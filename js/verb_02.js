@@ -41,18 +41,21 @@ function hslColor(h, s, l) {
   return color;
 }
 
-var shape_02 = document.queryselector(".shape")
+var roundtangle2 = document.querySelector(".roundtangle2");
 
-var width = randomNumber(200, 100);
-var height = randomNumber(150, 700);
+var width = randomNumber(100, 600);
+var height = randomNumber(200, 500);
 
-shape_02.style.width = width + "px";
-shape_02.style.height= height + "px";
+roundtangle2.style.width = width + "px";
+roundtangle2.style.height= height + "px";
 
-shape_02.style.background = hslColor(h, 50, 50);
-shape_02.style.borderColor = hslColor(h, 50, 50);
+var background = randomNumber(100, 600);
+var borderColor = randomNumber(200, 500);
+
+roundtangle2.style.background = "hslColor(h, 30, 50)";
+roundtangle2.style.borderColor = "hslColor(h, 70, 20)";
 
 var container = document.queryselector(".content");
 
-container.style.background = hslColor(h,50,10);
+container.style.background = hslColor(h,50,70);
 
