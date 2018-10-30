@@ -14,7 +14,7 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   font-family: 'Poiret One', cursive;
-  background-color: blanchedalmond;
+  background-color: white;
 }
 
 .center {
@@ -38,8 +38,8 @@ body {
   position: relative;
   left: 150px;
   top: 100px;
-  background-color: lightseagreen;
-  color: cadetblue;
+  background-color: darkseagreen;
+  color: pink;
   font-weight: bolder;
   text-align: center; 
   font-size: 100px;
@@ -63,23 +63,23 @@ body {
 
 @keyframes shapebind {
   0% {
-    background-color: lightblue;
+    background-color: darkseagreen;
     transform: scaleX(2.5) scaleY(2.5);
   }
   25% {
-    background-color: powderblue;
+    background-color: darkseagreen;
     transform: scaleX(1.5) scaleY(2.0);
   }
   50% {
-    background-color: powderblue;
+    background-color: #DAF7A6;
     transform: scaleX(1.0) scaleY(1.25);
   }
   75% {
-    background-color: powderblue;
+    background-color: #DAF7A6;
     transform: scaleX(0.5) scaleY(1.0);
   }
   100% {
-    background-color: powderblue;
+    background-color: honeydew;
     transform: scaleX(0.25) scaleY(0.25);
   }
 }
