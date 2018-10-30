@@ -15,7 +15,7 @@ body {
   min-height: 100vh;
   background-color: #D2F0D1;
   color: #164121;
-  font-family: 'Poiret One', cursive;
+  font-family: 'Khand', sans-serif;
 }
 
 .center {
@@ -33,19 +33,15 @@ body {
 }
 
 .verb h1 {
-  font-size: 150px;
+  font-size: 100px;
   text-align: center;
 }
 
 .verb h1 span:hover {
   color: white;
-  font-size: 350px;
+  font-size: 300px;
 }
 
 .menu {
   padding-left: 35px;
-}
-
-h4 {
-  padding-left: 30px;
 }
