@@ -33,11 +33,11 @@ body {
 
 .shape {
   width: 200px;
-  height: 120px;
+  height: 110px;
   border-radius: 10px;
   position: relative;
   left: 150px;
-  top: 100px;
+  top: 90px;
   background-color: darkseagreen;
   color: mistyrose;
   font-weight: bolder;
@@ -68,18 +68,22 @@ body {
   }
   25% {
     background-color: #DAF7A6;
+    color: pink;
     transform: scaleX(1.5) scaleY(2.0);
   }
   50% {
     background-color: #DAF7A6;
+    color: hotpink;
     transform: scaleX(1.0) scaleY(1.25);
   }
   75% {
     background-color: honeydew;
+    color: deeppink;
     transform: scaleX(0.5) scaleY(1.0);
   }
   100% {
     background-color: white;
+    color: palevioletred;
     transform: scaleX(0.25) scaleY(0.25);
   }
 }
