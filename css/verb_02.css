@@ -34,53 +34,97 @@ body {
 .roundtangle2 {
   width: 200px;
   height: 110px;
-  border-radius: 10px;
-  border:10px solid;
+  border-radius: 15px;
+  border:5px solid;
   position: relative;
-  left: 150px;
-  top: 90px;
-  background-color: darkseagreen;
+  left: 200px;
+  top: 200px;
+  text-align: center;
+  position: relative;
+  padding-top: 100px;
   color: mistyrose;
-  font-weight: bolder;
-  text-align: center; 
+  background-color: darkseagreen;
   font-size: 100px;
+  font-weight: bolder;
   animation-name: shapebind;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-direction: normal;
 }
 
-.transforms {
-  transform: rotateZ(45deg);
-  transform: rotateX(45deg);
-  transform: rotateY(45deg);
-  transform: skewX(45deg);
-  transform: skewY(45deg);
-  transform: scaleX(1.5);
-  transform: scaleY(1.5);
-  transform: translateX(50px);
-  transform: translateY(50px);
-}
-
 @keyframes shapebind {
   0% {
+    font-size: 50px;
     transform: scaleX(2.5) scaleY(2.5);
   }
   25% {
     color: white;
+    font-size: 50px;
     transform: scaleX(1.5) scaleY(2.0);
+    font-stretch: condensed;
   }
   50% {
     color: white;
+    font-size: 50px;
     transform: scaleX(1.0) scaleY(1.25);
   }
   75% {
     color: white;
+    font-size: 50px;
     transform: scaleX(0.5) scaleY(1.0);
   }
   100% {
     color: white;
+    font-size: 50px;
     transform: scaleX(0.25) scaleY(0.25);
   }
 }
- 
+
+.roundtangle3 {
+  width: 200px;
+  height: 110px;
+  border-radius: 15px;
+  border:5px solid;
+  position: relative;
+  left: 1000px;
+  top: 0px;
+  text-align: center;
+  position: relative;
+  color: mistyrose;
+  background-color: darkseagreen;
+  font-size: 100px;
+  font-weight: bolder;
+  animation-name: shapefind;
+  animation-duration: 6.5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes shapefind {
+  0% {
+    color: darkseagreen;
+    font-size: 50px;
+    transform: scaleX(2.5) scaleY(1.5);
+  }
+  25% {
+    color: white;
+    font-size: 50px;
+    transform: scaleX(2.25) scaleY(1.25);
+    font-stretch: condensed;
+  }
+  50% {
+    color: pink;
+    font-size: 50px;
+    transform: scaleX(1.25) scaleY(1.05);
+  }
+  75% {
+    color: white;
+    font-size: 50px;
+    transform: scaleX(1.05) scaleY(0.75);
+  }
+  100% {
+    color: honeydew;
+    font-size: 50px;
+    transform: scaleX(0.75) scaleY(0.25);
+  }
+}
