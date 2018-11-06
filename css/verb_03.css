@@ -44,23 +44,23 @@ body {
   text-align: center; 
   font-size: 100px;
   font-weight: bolder;
-  animation-name: shapesmall;
+  animation-name: scaledown;
+  animation-duration: 2s;
+  animation-direction: alternate-reverse;
   animation-iteration-count: infinite;
-  transition: all 4s;
 }
 
-@keyframes shapesmall {
+@keyframes scaledown {
   0% {
-    transform: scaleX(2.5) scaleY(2.5);
+    size: 50px;
   }
-  
   100% {
-    transform: scaleX(0.25) scaleY(0.25);
+    size: 5px; 
   }
 }
 
 .shape-interaction {
-  transform: rotate(350deg);
+  transform:scale(0.5,0.3);
 }
 
 .bindme:hover {
