@@ -67,19 +67,19 @@ body {
     transform: scaleX(2.5) scaleY(2.5);
   }
   25% {
-    color: pink;
+    color: white;
     transform: scaleX(1.5) scaleY(2.0);
   }
   50% {
-    color: hotpink;
+    color: white;
     transform: scaleX(1.0) scaleY(1.25);
   }
   75% {
-    color: deeppink;
+    color: white;
     transform: scaleX(0.5) scaleY(1.0);
   }
   100% {
-    color: palevioletred;
+    color: white;
     transform: scaleX(0.25) scaleY(0.25);
   }
 }
