@@ -44,20 +44,18 @@ function hslColor(h, s, l) {
 }
 
 
-
-
 // select container element
 var container = document.querySelector(".content");
 
 
 // add 500 divs with the class "shape" to it
-for (var i = 0; i < 500; i++) {  
+for (var i = 0; i < 159; i++) {  
   var shape = document.createElement('div');
   shape.classList.add('shape');
 
   // add a random animation duration and delay to each shape
   shape.style.animationDelay = randomNumber(0, 5000) + 'ms';
-  shape.style.animationDuration = randomNumber(1000, 10000) + 'ms';
+  shape.style.animationDuration = randomNumber(5000, 5000) + 'ms';
 
   container.appendChild(shape);
 }
@@ -74,6 +72,13 @@ shapes.forEach(function(shape) {
       shape.classList.remove('shape-interaction');
     } else {
       shape.classList.add('shape-interaction');
+    }
+  });
+  shape.addEventListener('click', function () {
+    if (shape.classList.contains('click-me')) {
+      shape.classList.remove('click-me');
+    } else {
+      shape.classList.add('click-me');
     }
   });
 });
