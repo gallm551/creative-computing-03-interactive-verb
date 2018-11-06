@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  overflow: scroll;
 }
 
 html {
@@ -30,35 +31,39 @@ body {
   width: 100%;
 }
 
-.shape03 {
-  width: 200px;
-  height: 110px;
+.bindme {
+  width: 300px;
+  height: 200px;
+  border:15px solid;
   border-radius: 10px;
-  border:10px solid;
   position: relative;
-  left: 150px;
-  top: 90px;
-  background-color: darkseagreen;
+  left: 100px;
+  top: 100px;
   color: mistyrose;
-  font-weight: bolder;
+  background-color: darkseagreen;
   text-align: center; 
   font-size: 100px;
+  font-weight: bolder;
   animation-name: shapesmall;
-  display: inline-block;
-  animation-direction: alternate-reverse;
   animation-iteration-count: infinite;
   transition: all 4s;
 }
 
 @keyframes shapesmall {
   0% {
-    border-top-color: hsl(300, 50%, 50%);
+    transform: scaleX(2.5) scaleY(2.5);
   }
+  
   100% {
-    border-top-color: transparent;
+    transform: scaleX(0.25) scaleY(0.25);
   }
 }
 
 .shape-interaction {
   transform: rotate(350deg);
 }
+
+.bindme:hover {
+    color: coral;
+}
+
