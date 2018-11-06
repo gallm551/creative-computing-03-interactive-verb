@@ -16,7 +16,9 @@ body {
   background-color: #D2F0D1;
   color: #164121;
   font-family: 'Khand', sans-serif;
-}
+  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAP0lEQVQoU2P8f+jN/8t6TxmwAd1L0gyMlz5c/A9ioCuCiYEVgHRjUwQShyuAWYGuEEUBNlMwTEC3jrAjCXkTAL9DOs0rNSRwAAAAAElFTkSuQmCC)
+  repeat;
+}  
 
 .center {
   position: absolute;

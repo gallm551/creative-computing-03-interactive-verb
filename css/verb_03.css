@@ -9,9 +9,11 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 30px;
   min-width: 100vw;
   min-height: 100vh;
+  font-family: 'Khand', sans-serif;
+  background-color: mistyrose;
 }
 
 .center {
@@ -26,4 +28,37 @@ body {
 .content {
   height: 100%;
   width: 100%;
+}
+
+.shape03 {
+  width: 200px;
+  height: 110px;
+  border-radius: 10px;
+  border:10px solid;
+  position: relative;
+  left: 150px;
+  top: 90px;
+  background-color: darkseagreen;
+  color: mistyrose;
+  font-weight: bolder;
+  text-align: center; 
+  font-size: 100px;
+  animation-name: shapesmall;
+  display: inline-block;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  transition: all 4s;
+}
+
+@keyframes shapesmall {
+  0% {
+    border-top-color: hsl(300, 50%, 50%);
+  }
+  100% {
+    border-top-color: transparent;
+  }
+}
+
+.shape-interaction {
+  transform: rotate(350deg);
 }

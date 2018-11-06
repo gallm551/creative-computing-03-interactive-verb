@@ -49,13 +49,10 @@ var height = randomNumber(200, 500);
 roundtangle2.style.width = width + "px";
 roundtangle2.style.height= height + "px";
 
-var background = randomNumber(100, 600);
-var borderColor = randomNumber(200, 500);
+var background = randomNumber(50, 150);
+var borderColor = randomNumber(100, 350);
 
-roundtangle2.style.background = "hslColor(h, 30%, 50)";
-roundtangle2.style.borderColor = "hslColor(h, 70, 20)";
+roundtangle2.style.background = hslColor(background, 40, 75);
+roundtangle2.style.borderColor = hslColor(borderColor, 60, 70);
 
-var container = document.queryselector(".content");
-
-container.style.background = hslColor(h,50,70);
 
